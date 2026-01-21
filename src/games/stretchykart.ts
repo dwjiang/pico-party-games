@@ -4,8 +4,7 @@ const config: GameConfig = {
   name: "Stretchy Kart",
   author: { name: "HerringboneGames", uid: 44550 },
   description: {
-    short:
-      "An old school racing game with pseudo-3D perspective. Race against your friends!",
+    short: "An old school racing game with pseudo-3D perspective. Race against your friends!",
     full: "An old school racing game with pseudo-3D perspective. Collect hot dogs to gain acceleration and race against your friends! Created for the Stretchy Buoys Jam 2025.",
   },
   categories: [Category.RACING, Category.VERSUS, Category.FASTPACED],

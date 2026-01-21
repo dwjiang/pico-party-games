@@ -4,8 +4,7 @@ const config: GameConfig = {
   name: "Derailed!",
   author: { name: "Yolwoocle", uid: 47064 },
   description: {
-    short:
-      "A 2-player demake of Unrailed! where you build tracks to keep a train on its rails.",
+    short: "A 2-player demake of Unrailed! where you build tracks to keep a train on its rails.",
     full: "Derailed! is a 2-player demake of Unrailed!, a co-op game where you build tracks to keep a train on its rails. Communication is vital!",
   },
   categories: [Category.COOPERATIVE, Category.FASTPACED, Category.STRATEGY],
