@@ -1,0 +1,31 @@
+{
+  "name": "pico-party-games",
+  "type": "module",
+  "description": "PICO-8 game configurations for PICO Party multiplayer platform",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwjiang/pico-party-games.git"
+  },
+  "homepage": "https://picoparty.io",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "check": "biome check --write .",
+    "update-readme": "npx tsx scripts/update-readme.ts",
+    "workflow:check": "biome check ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.11",
+    "@types/node": "^25.0.9",
+    "tsx": "^4.21.0",
+    "typescript": "^5.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/dwjiang/pico-party-games/issues"
+  }
+}
