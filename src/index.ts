@@ -1,25 +1,22 @@
-import { readdirSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+// AUTO-GENERATED FILE - DO NOT EDIT DIRECTLY
+// Run `npm run sync` to regenerate
+
 import type { GameConfig } from "./types";
 
-// Re-export types
 export { type Author, Category, type GameConfig } from "./types";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+import chuchupico from "./games/chuchupico";
+import derailed from "./games/derailed";
+import jumpingdoodle from "./games/jumpingdoodle";
+import manbomber from "./games/manbomber";
+import stretchykart from "./games/stretchykart";
 
-const gamesDir = join(__dirname, "games");
-const files = readdirSync(gamesDir).filter(
-  (file: string) => file.endsWith(".ts") || file.endsWith(".js"),
-);
-
-const modules = await Promise.all(
-  files.map((file) => import(join(gamesDir, file))),
-);
-
-export const gameConfigs: readonly GameConfig[] = modules
-  .map((mod) => mod.default as GameConfig)
-  .sort((a, b) => a.name.localeCompare(b.name));
+export const gameConfigs: readonly GameConfig[] = [
+  chuchupico,
+  derailed,
+  jumpingdoodle,
+  manbomber,
+  stretchykart,
+].sort((a, b) => a.name.localeCompare(b.name));
 
 export default gameConfigs;

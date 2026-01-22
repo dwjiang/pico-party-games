@@ -44,23 +44,18 @@ const config: GameConfig = {
 export default config;
 ```
 
-### Step 2: Build and Test
+### Step 2: Build and Sync
 
 ```bash
 npm run build
 ```
 
-Verify there are no TypeScript errors.
+This command:
+1. Regenerates `src/index.ts` with all game imports
+2. Updates the games table in `README.md`
+3. Compiles TypeScript to verify there are no errors
 
-### Step 3: Update the README
-
-```bash
-npm run update-readme
-```
-
-This regenerates the games table in README.md with your new game included.
-
-### Step 4: Submit a Pull Request
+### Step 3: Submit a Pull Request
 
 1. Commit your changes
 2. Push to your fork
@@ -88,16 +83,12 @@ Good places to find PICO-8 multiplayer games:
 
 - Game must be a PICO-8 game with a publicly accessible `.p8.png` cartridge
 - Game should support 2+ players (or have interesting single-player that benefits from streaming)
-- Include at least one screenshot or GIF
-- Provide accurate player count information
-- Use high-quality images (preferably from itch.io or Lexaloffle)
+- Include at least one screenshot or GIF (preferably from itch.io or Lexaloffle)
 
 ## Tips
 
 - **Finding cartUrl**: On Lexaloffle BBS, right-click the cartridge image and copy the image URL
 - **Finding author uid**: The number in the author's profile URL (e.g., `/bbs/?uid=12345`)
-- **Screenshots**: itch.io image URLs or Lexaloffle media URLs are preferred
-- **Description**: Keep it concise but informative - explain the core gameplay
 
 ## Questions?
 

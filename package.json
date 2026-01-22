@@ -14,10 +14,9 @@
     "dist/**/*"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "npx tsx scripts/sync.ts && tsc",
     "prepare": "npm run build",
     "check": "biome check --write .",
-    "update-readme": "npx tsx scripts/update-readme.ts",
     "workflow:check": "biome check ."
   },
   "dependencies": {
