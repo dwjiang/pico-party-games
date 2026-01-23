@@ -1,6 +1,6 @@
 # PICO Party Games
 
-PICO-8 game configurations for the [PICO Party](https://picoparty.io) multiplayer platform.
+PICO-8 game configurations for the [PICO Party](https://picoparty.io) multiplayer platform. Not affiliated with Lexaloffle.
 
 ## Available Games
 
@@ -18,3 +18,8 @@ PICO-8 game configurations for the [PICO Party](https://picoparty.io) multiplaye
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for instructions on how to add new games.
+
+## Removing a Game
+
+If you are a game author and would like your game removed from PICO Party, please contact me via email, [open an issue](https://github.com/picoparty/pico-party-games/issues/new), or submit a pull request removing your game's configuration file from the `games/` directory. I will process removal requests promptly.
+
