@@ -14,6 +14,7 @@ PICO-8 game configurations for the [PICO Party](https://picoparty.io) multiplaye
 | Manbomber | fresh-d | 2-4 | Versus, Fast-Paced |
 | PICO-BALL | [Munchkin](https://www.lexaloffle.com/bbs/?uid=48557) | 1-2 | Versus, Cooperative, Fast-Paced |
 | Stretchy Kart | [HerringboneGames](https://www.lexaloffle.com/bbs/?uid=44550) | 1-2 | Racing, Versus, Fast-Paced |
+| Xenith | [Godmil](https://www.lexaloffle.com/bbs/?uid=20645) | 1-2 | Fast-Paced |
 
 ## Contributing
 

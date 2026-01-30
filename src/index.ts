@@ -13,6 +13,7 @@ import jumpingdoodle from "./games/jumpingdoodle";
 import manbomber from "./games/manbomber";
 import picoball from "./games/picoball";
 import stretchykart from "./games/stretchykart";
+import xenith from "./games/xenith";
 
 export const gameConfigs: readonly GameConfig[] = [
   chuchupico,
@@ -23,6 +24,7 @@ export const gameConfigs: readonly GameConfig[] = [
   manbomber,
   picoball,
   stretchykart,
+  xenith,
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default gameConfigs;
