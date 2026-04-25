@@ -16,7 +16,7 @@ const config: GameConfig = {
     "https://img.itch.zone/aW1hZ2UvODYzMDU0LzQ5NDY3MzkucG5n/347x500/1xqrVp.png",
     "https://img.itch.zone/aW1hZ2UvODYzMDU0LzQ5NDY3NDAucG5n/347x500/i0sBPB.png",
   ],
-  cartUrl: "https://www.lexaloffle.com/bbs/cposts/ma/manbomber.p8.png",
+  cartUrl: "https://www.lexaloffle.com/bbs/cposts/ma/manbomber-0.p8.png",
 };
 
 export default config;
