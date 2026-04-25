@@ -1,0 +1,38 @@
+name: Check carts
+
+on:
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Probe cartUrls and apply fixes
+        env:
+          PR_BODY_FILE: ${{ github.workspace }}/.cart-pr-body.md
+        run: npx tsx scripts/check-carts.ts
+
+      - name: Open or update PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/refresh-cart-urls
+          commit-message: "chore: refresh stale cartUrls"
+          title: "chore: refresh stale cartUrls"
+          body-path: .cart-pr-body.md
+          add-paths: src/games/*.ts
+          delete-branch: true

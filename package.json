@@ -17,6 +17,7 @@
     "build": "npx tsx scripts/sync.ts && tsc",
     "prepare": "npm run build",
     "check": "biome check --write .",
+    "check-carts": "tsx scripts/check-carts.ts",
     "workflow:check": "biome check ."
   },
   "dependencies": {
