@@ -1,9 +1,12 @@
-import { Category } from "../types";
+import { Category, type GameConfig } from "../types";
 
-const config = {
+const config: GameConfig = {
   name: "Pico Checkmake",
   author: { name: "Krystman" },
-  description: { short: "A simple, cute retro version of classic Chess made in Pico-8.", full: "A simple, cute retro version of classic Chess made in Pico-8." },
+  description: {
+    short: "A simple, cute retro version of classic Chess made in Pico-8.",
+    full: "A simple, cute retro version of classic Chess made in Pico-8.",
+  },
   categories: [Category.STRATEGY],
   pictures: [
     "https://i.imgur.com/GFIJUEl.gif",

@@ -11,6 +11,7 @@ import freezingknights from "./games/freezingknights";
 import hitbox from "./games/hitbox";
 import jumpingdoodle from "./games/jumpingdoodle";
 import manbomber from "./games/manbomber";
+import pico_checkmake_8a00s4 from "./games/pico_checkmake_8a00s4";
 import picoball from "./games/picoball";
 import stretchykart from "./games/stretchykart";
 import xenith from "./games/xenith";
@@ -22,6 +23,7 @@ export const gameConfigs: readonly GameConfig[] = [
   hitbox,
   jumpingdoodle,
   manbomber,
+  pico_checkmake_8a00s4,
   picoball,
   stretchykart,
   xenith,
